@@ -15,7 +15,11 @@ netease-quickpass-sdk.umd.js将暴露`NEQuickPass`变量，引入方式如下：
 
 *注意：* 生产上有https访问的，https请求跨域，会导致上报的referer为空，请在head中添加代码： 
 ```js
-  <meta content="always" name="referrer">
+  <meta content="origin" name="referrer">
+```
+或者
+```js
+  <meta content="origin-when-cross-origin" name="referrer">
 ```
 
 ## 初始化
