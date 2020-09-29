@@ -25,8 +25,9 @@ netease-quickpass-sdk.umd.js将暴露`NEQuickPass`变量，引入方式如下：
 ## 初始化
 
 ```js
-  var sdk = new NEQuickPass('从易盾申请到的appId');
+  var sdk = new NEQuickPass('从易盾申请到的appId', { timeout });
 ```
+*timeout* -- getToken超时时间
 
 ## 获取秘钥
 调用实例的getToken方法可获取验证秘钥。getToken支持回调函数和promise。
